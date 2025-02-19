@@ -5,6 +5,7 @@ import Home from "../pages/Home";
 import About from "../pages/About";
 import DashboardLayout from "@/layout/DashboardLayout";
 import Dashboard from "@/pages/Dashboard";
+import Settings from "@/pages/Settings";
 export default function AppRouter() {
   return (
     <BrowserRouter>
@@ -17,6 +18,7 @@ export default function AppRouter() {
         </Route>
         <Route path="/dashboard" element={<DashboardLayout />}>
           <Route index element={<Dashboard />} />
+          <Route path="/dashboard/settings" element={<Settings />} />
         </Route>
       </Routes>
     </BrowserRouter>

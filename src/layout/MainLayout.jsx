@@ -4,10 +4,9 @@ import React from "react";
 import { Outlet } from "react-router";
 function MainLayout() {
   return (
-    <div className="mx-auto max-w-6xl w-full">
+    <div className="">
       <nav className="flex justify-between">
-        <HomeNavLinks />
-        <ModeToggle />
+        Hello World
       </nav>
       {<Outlet />}
     </div>

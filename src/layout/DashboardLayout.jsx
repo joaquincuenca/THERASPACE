@@ -2,18 +2,21 @@ import { Outlet } from "react-router";
 import ProfileSetting from "@/components/profile-settings";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/app-sidebar";
-
+import { PopupChat } from "@/components/PopupChat";
 function DashboardLayout() {
   return (
     <div>
       <SidebarProvider>
         <AppSidebar />
         <main className="w-full p-2">
-          <div className="flex justify-between">
+          <div className="flex justify-between items-center">
             <SidebarTrigger />
             <ProfileSetting />
           </div>
           <div className="my-2">{<Outlet />}</div>
+          <div>
+            <PopupChat />
+          </div>
         </main>
       </SidebarProvider>
     </div>

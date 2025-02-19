@@ -9,7 +9,7 @@ import { Separator } from "./ui/separator";
 import Logout from "./logout-button";
 export default function ProfileSetting() {
   return (
-    <div className="flex gap-2">
+    <div className="flex gap-2 items-center">
       <ModeToggle />
       <Popover>
         <PopoverTrigger>

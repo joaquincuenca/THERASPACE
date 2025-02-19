@@ -9,6 +9,7 @@ function Dashboard() {
       <SampleChart1 />
     </div>
   );
+  
 }
 
 export default Dashboard;
